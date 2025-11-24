@@ -1,0 +1,120 @@
+:root {
+  --color-bg-main: #0a1128; /* Deep Navy from poster */
+  --color-text-gold: #d4af37; /* Metallic Gold */
+  --color-text-white: #ffffff;
+  --color-accent: #FFD700; /* A slightly brighter gold for buttons/links */
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-main);
+  color: var(--color-text-white);
+  line-height: 1.6;
+  background-image: url('../images/science-doodles.png'); /* Subtle pattern */
+  background-repeat: repeat;
+  background-size: 300px;
+  background-blend-mode: soft-light;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  color: var(--color-text-gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1 { font-size: 3.5rem; margin-bottom: 0.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+h2 { font-size: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--color-text-gold); display: inline-block; }
+h3 { font-size: 1.5rem; }
+
+a { color: var(--color-accent); text-decoration: none; transition: color 0.3s ease; }
+a:hover { color: var(--color-text-white); }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* --- Hero Section --- */
+.hero {
+  padding: 100px 20px 60px;
+  position: relative;
+}
+
+.hero-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 2rem;
+  filter: drop-shadow(0 0 10px var(--color-text-gold));
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+  color: var(--color-text-gold);
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, var(--color-text-gold), var(--color-accent));
+  color: var(--color-bg-main);
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+  color: var(--color-bg-main);
+}
+
+/* --- Sections --- */
+section {
+  padding: 60px 20px;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.faculty-credentials {
+  font-weight: bold;
+  color: var(--color-accent);
+  margin-top: 1rem;
+}
+
+.course-dates {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--color-text-white);
+  background: rgba(212, 175, 55, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+/* --- Footer --- */
+footer {
+  padding: 40px 20px;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  .hero { padding-top: 60px; }
+}

@@ -1,0 +1,14 @@
+title: "JEE Mains Chemistry Crash Course"
+description: "Join The Chemical Catalyst for an exclusive crash course aimed at acing your JEE Mains."
+baseurl: "thechemistrycatalyst" # Keep empty for a root-level domain, or set to /repository-name for a project page
+url: "https://github.com/Rupotron/thechemistrycatalyst.github.io" # Replace with your GitHub Pages URL
+author: "The Chemical Catalyst"
+phone: "+91 6289 864 348"
+address: "Flat no A096,A, DLF New Town Heights, Action Area III, Newtown, Kolkata 700135"
+course_dates: "30th November 2025 to 15th January 2026"
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-primer # We'll override this with our custom CSS
+plugins:
+  - jekyll-seo-tag
