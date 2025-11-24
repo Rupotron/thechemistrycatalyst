@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   </head>
   <body>
+    <nav style="text-align: center; padding: 20px;">
+  <a href="{{ '/' | relative_url }}" style="margin: 0 15px; font-weight: bold; text-transform: uppercase;">Home</a>
+  <a href="{{ '/blog/' | relative_url }}" style="margin: 0 15px; font-weight: bold; text-transform: uppercase;">Blog</a>
+  <a href="{{ '/contact/' | relative_url }}" style="margin: 0 15px; font-weight: bold; text-transform: uppercase;">Contact</a>
+</nav>
     <div class="container">
       {{ content }}
     </div>
