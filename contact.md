@@ -10,7 +10,7 @@ permalink: /contact/
 </section>
 
 <section>
-  <form action="YOUR_FORMSPREE_ENDPOINT_HERE" method="POST" class="contact-form">
+  <form action="https://formspree.io/f/xjkdkaky" method="POST" class="contact-form">
     <label>
       Your Name:
       <input type="text" name="name" required placeholder="Student or Parent Name">
